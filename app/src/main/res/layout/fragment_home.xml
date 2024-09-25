@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- Header with Logo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Hamburger Menu Icon -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:src="@drawable/ic_menu" />
+
+        <!-- FPT University Logo -->
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fpt_logo" />
+    </LinearLayout>
+
+    <!-- Scrollable Content, Centered Vertically -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Notification and Application Status Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="16dp"
+                    android:fontFamily="@font/playwritedegrund_variablefont_wght"
+                    android:text="Notification and Application Status"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                    <!-- Notification Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/button_background"
+                        android:drawableTop="@drawable/ic_notification"
+                        android:padding="16dp"
+                        android:text="Notification"
+                        android:textColor="@color/orange" />
+
+                    <!-- Application Status Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_application_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:drawableTop="@drawable/ic_application_status"
+                        android:padding="16dp"
+                        android:text="Application Status"
+                        android:textColor="@color/orange" />
+                </LinearLayout>
+
+                <!-- Information Access Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="16dp"
+                    android:text="Information Access"
+                    android:fontFamily="@font/playwritedegrund_variablefont_wght"
+                    android:textColor="@color/blue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                    <!-- Weekly Timetable Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_weekly_timetable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/button_background"
+                        android:drawableTop="@drawable/ic_timetable"
+                        android:padding="16dp"
+                        android:text="Weekly Timetable"
+                        android:textColor="@color/orange" />
+
+                    <!-- Exam Schedule Button -->
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_exam_schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background"
+                        android:drawableTop="@drawable/ic_exam_schedule"
+                        android:padding="16dp"
+                        android:text="Exam Schedule"
+                        android:textColor="@color/orange" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

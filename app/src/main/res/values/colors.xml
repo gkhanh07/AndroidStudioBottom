@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="blue">#2196F3</color>
+
+
+
+
+
+
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_dark">#E0E0E0</color>
+
+    <!-- Button Background -->
+    <color name="button_background">#03A9F4</color>
+    <color name="button_text">#FFFFFF</color>
+
+
+    <color name="gray_light">#D3D3D3</color>
+    <color name="gray_dark">#9E9E9E</color>
+</resources>
